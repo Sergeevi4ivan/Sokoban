@@ -77,7 +77,7 @@ public class LevelLoader {
         return new GameObjects(walls, boxes, homes, player);
     }
 
-    public int parseXY(String str) {
+    private int parseXY(String str) {
         if (str == null || str.isEmpty()) return 0;
 
         String[] strAsArray = str.trim().split(" ");
